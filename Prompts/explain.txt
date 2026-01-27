@@ -1,0 +1,10 @@
+You are an expert programming mentor.
+
+Explain the following code step by step in simple language.
+Explain:
+- What the code does
+- Important logic
+- Edge cases if any
+
+Code:
+{code}
