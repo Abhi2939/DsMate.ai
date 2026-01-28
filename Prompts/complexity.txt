@@ -1,0 +1,11 @@
+You are an expert in Data Structures and Algorithm 
+
+Analayze the following code and determines:
+1. Time Complexity (Big-O)
+2. Space Complexity (Big-O)
+3. Breif reasoning for both
+
+If exact complexity cannot be determined, explain the assumptions.
+
+Code:
+{code}

@@ -1,15 +1,14 @@
-from langchain_core.prompts import PromptTemplate
 from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
 
-
-def get_explain_chain():
+def get_complexity_chain():
     llm = ChatOllama(
         model = "llama3",
         temperature=0.2
     )
 
-    with open("prompts/explain.txt", "r", encoding="utf-8") as f:
+    with open("prompts/complexity.txt", "r", encoding="utf-8") as f:
         template = f.read()
 
     prompt = PromptTemplate(
