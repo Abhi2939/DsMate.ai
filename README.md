@@ -1,43 +1,46 @@
-🧠 AI Code Assistant
+# 🧠 AI Code Assistant
 
-An LLM-powered code assistant that helps developers understand, debug, and analyze code using Large Language Models.
-Built with LangChain, Streamlit, and Ollama (local LLMs) to enable fast, private, and cost-free inference.
+AI Code Assistant is an **LLM-powered tool** that helps developers **understand, debug, and analyze code** using Large Language Models.  
+It is built with **LangChain, Streamlit, and Ollama (local LLMs)** to enable fast, private, and cost-free inference.
 
-🚀 Features
+---
 
-📖 Code Explanation
-Get step-by-step explanations of C++, Python, or Java code.
+## 🚀 Features
 
-🐞 Bug Detection & Suggestions
-Detect syntax errors, logical bugs, and edge cases with improvement suggestions.
+- 📖 **Code Explanation**  
+  Step-by-step explanations of C++, Python, and Java code.
 
-📊 Time & Space Complexity Analysis
-Analyze algorithmic complexity with clear reasoning.
+- 🐞 **Bug Detection & Suggestions**  
+  Detects syntax errors, logical bugs, and edge cases with improvement suggestions.
 
-🧠 Conversation Memory
-Supports multi-turn interactions (follow-up questions, refinements).
+- 📊 **Time & Space Complexity Analysis**  
+  Analyzes algorithmic complexity with clear reasoning.
 
-⚡ Local LLM Inference
-Runs entirely on your machine using Ollama (no API keys required).
+- 🧠 **Conversation Memory**  
+  Supports multi-turn interactions such as follow-up questions and refinements.
 
-🎨 Clean UI with Tabs
-Built using Streamlit for a simple and intuitive user experience.
+- ⚡ **Local LLM Inference**  
+  Runs entirely on your machine using Ollama (no API keys required).
 
-🛠️ Tech Stack
+- 🎨 **Clean UI with Tabs**  
+  Simple and intuitive interface built using Streamlit.
 
-Python
+---
 
-LangChain
+## 🛠️ Tech Stack
 
-Ollama (local LLM runtime)
+- Python  
+- LangChain  
+- Ollama (local LLM runtime)  
+- Streamlit  
+- LLaMA 3 / Mistral (via Ollama)
 
-Streamlit
+---
 
-LLaMA 3 / Mistral (via Ollama)
+## 📂 Project Structure
 
-📂 Project Structure
-DSAss/
-│
+```text
+DS/
 ├── app.py                  # Streamlit app
 ├── requirements.txt
 ├── README.md
@@ -55,75 +58,4 @@ DSAss/
 ├── memory/
 │   └── chat_memory.py
 │
-└── venv/                   # (ignored in Git)
-
-⚙️ Setup Instructions
-1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/llm-code-assistant.git
-cd llm-code-assistant
-
-2️⃣ Create Virtual Environment
-python -m venv venv
-source venv/bin/activate     # Linux / Mac
-venv\Scripts\activate        # Windows
-
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-
-4️⃣ Install Ollama
-
-Download and install from:
-👉 https://ollama.com
-
-Pull a model:
-
-ollama pull llama3:8b
-
-
-(For low-RAM systems, use mistral)
-
-5️⃣ Run the App
-streamlit run app.py
-
-
-Open browser at:
-
-http://localhost:8501
-
-🧪 Example Use Cases
-
-Understand unfamiliar code quickly
-
-Debug logic errors during DSA practice
-
-Analyze algorithm complexity for interviews
-
-Get optimization hints without full solutions
-
-🧠 Design Highlights
-
-Modular LangChain Runnable pipelines
-
-Prompt-engineered responses (no hardcoding)
-
-Stateless UI with session-based memory
-
-Local inference → privacy + zero API cost
-
-📌 Limitations
-
-No automatic code execution
-
-Depends on LLM reasoning (may vary by model)
-
-Optimized for short to medium-length code snippets
-
-🔮 Future Improvements
-
-🚀 Optimization Suggestions Tab
-
-🧪 Test Case Generator
-
-🔀 Model switch (Local ↔ OpenAI)
-
-🧾 Code refactoring suggestions
+└── venv/                   # Ignored in Git
