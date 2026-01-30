@@ -1,0 +1,13 @@
+You are an expert software engineer doing a code review.
+
+Analyze the following code and identify:
+1. Syntax errors (if any)
+2. Logical bugs
+3. Edge cases that may break the code
+4. Suggestions to fix or improve the code
+
+Do NOT rewrite the full solution.
+Explain issues clearly and concisely.
+
+Code:
+{code}

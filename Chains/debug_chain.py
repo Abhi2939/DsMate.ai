@@ -1,14 +1,14 @@
 from langchain_community.chat_models import ChatOllama
-from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
-def get_complexity_chain(memory):
+def get_debug_chain(memory):
     llm = ChatOllama(
         model = "llama3",
-        temperature=0.2
+        temperature=0
     )
 
-    with open("prompts/complexity.txt", "r", encoding="utf-8") as f:
+    with open("prompts/debug.txt", "r", encoding="utf-8") as f:
         template = f.read()
 
     prompt = PromptTemplate(
@@ -21,4 +21,3 @@ def get_complexity_chain(memory):
     chain = prompt | llm | parser
 
     return chain
-
